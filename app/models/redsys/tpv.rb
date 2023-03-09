@@ -76,7 +76,8 @@ module Redsys
         :DS_MERCHANT_URLOK => @url_ok,
         :DS_MERCHANT_URLKO => @url_ko,
         :DS_MERCHANT_MERCHANTNAME => @merchant_name,
-        :DS_MERCHANT_PRODUCTDESCRIPTION => @product_description
+        :DS_MERCHANT_PRODUCTDESCRIPTION => @product_description,
+        :DS_MERCHANT_PAYMETHODS => 'z'
       }
       JSON.generate(merchant_parameters)
     end
